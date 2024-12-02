@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    background-color: white;
+}
+
+.navbar h1{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu a{
+    justify-content: space-between;
+    color: black;
+    padding: 10px;
+}
+
+.banner{
+    background-image: url(image.jpg);
+    text-align: center;
+    padding-top: 200px;
+    height: 500px;
+    color: white;
+}
+
+.banner h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.banner p{
+    font-size: 25px;
+}
+
+.competences h1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.projet h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.contact h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.parag{
+    text-align: center;
+    margin: 50px;
+    padding: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(159, 159, 228);
+}
+
+.progress{
+    background-color: #f3f0f0fb;
+    margin: 50px;
+    padding: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.competences1 h1{
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.competences2 h1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 15px;
+
+}
+
+.form{
+    padding-bottom: 50px;
+}
