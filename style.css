@@ -199,12 +199,35 @@ input {
     }
 }
 
-/* Section de progression des compétences */
 .progress {
     background-color: #f3f0f0fb;
-    margin: 50px;
-    padding: 50px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px; /* Limite de largeur pour l'écran large */
+    margin-left: auto;
+    margin-right: auto;
 }
+
+@media (max-width: 768px) {
+    .progress {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .progress div {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 .rounded-full {
     margin: 5px 0;
