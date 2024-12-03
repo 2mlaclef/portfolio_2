@@ -86,7 +86,13 @@ input {
     }
 
     .banner {
-        padding-top: 100px; /* Réduit le padding supérieur pour les petits écrans */
+        background-image: url('image.jpg');
+        text-align: center;
+        padding-top: 200px;  /* Padding supérieur pour les grands écrans */
+        height: 500px;       /* Hauteur fixe pour la bannière */
+        color: white;
+        background-size: cover; /* Assure que l'image couvre toute la zone de la bannière */
+        background-position: center center; /* Centre l'image de fond */
     }
 }
 
@@ -100,13 +106,48 @@ input {
 }
 
 .banner h1 {
-    font-size: 60px;
+    font-size: 60px;  /* Taille de texte sur grand écran */
     font-weight: 800;
 }
 
 .banner p {
     font-size: 25px;
 }
+/* Responsivité pour les écrans plus petits (tablettes) */
+@media (max-width: 768px) {
+    .banner {
+        padding-top: 150px;  /* Réduire le padding supérieur */
+        height: 400px;       /* Réduire la hauteur de la bannière */
+    }
+
+    .banner h1 {
+        font-size: 45px;  /* Réduire la taille du titre */
+    }
+
+    .banner p {
+        font-size: 20px;  /* Réduire la taille du texte */
+    }
+}
+
+/* Responsivité pour les très petits écrans (mobiles) */
+@media (max-width: 480px) {
+    .banner {
+        padding-top: 100px;  /* Réduire encore plus le padding supérieur */
+        height: 300px;       /* Réduire encore la hauteur de la bannière */
+    }
+
+    .banner h1 {
+        font-size: 30px;  /* Réduire la taille du titre */
+    }
+
+    .banner p {
+        font-size: 18px;  /* Réduire la taille du texte */
+    }
+}
+
+
+
+
 
 /* Section des compétences */
 .competences h1 {
@@ -134,9 +175,28 @@ input {
     text-align: center;
     margin: 50px;
     padding: 25px;
+    background-color: rgb(159, 159, 228);
+    /* Marges horizontales pour les grands écrans */
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgb(159, 159, 228);
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    .parag {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;
+    }
+}
+
+/* Responsivité pour les très petits écrans (mobiles) */
+@media (max-width: 480px) {
+    .parag {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
 }
 
 /* Section de progression des compétences */
