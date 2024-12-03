@@ -9,8 +9,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav>
+            <div class="navbar">
                 <h1>Oumar SAGNA</h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Menu hamburger -->
                 <div class="menu">
                     <a href="#acceuil">Acceuil</a>
                     <a href="#propos">A propos de moi</a>
@@ -18,6 +20,7 @@
                     <a href="#motiv">Motivation</a>
                     <a href="#cont">Contact</a>
                 </div>
+            </div>            
         </nav>
         <div class="banner" id="acceuil">
             <h1>Développeur web</h1>
@@ -33,19 +36,17 @@
                 <h1>Mes compétences</h1>
             </div>
             <div class="progress">
-                <div class="competences1">
-                    <h1>Mes compétences</h1>
-                </div>
+                <!-- Progress bars pour les compétences -->
                 <div class="rounded-full" style="width: 90%">
                     <div class="bg-orange-600 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">HTML 90%</div>
                 </div><br>
                 <div class="rounded-full" style="width: 85%">
                     <div class="bg-blue-600 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">CSS 85%</div>
                 </div><br>
-                <div class=" rounded-full" style="width: 80%">
+                <div class="rounded-full" style="width: 80%">
                     <div class="bg-blue-500 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">TAILWIND 80%</div>
                 </div><br>
-                <div class=" rounded-full" style="width: 80%">
+                <div class="rounded-full" style="width: 80%">
                     <div class="bg-gray-400 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">BOOTSTRAP 80%</div>
                 </div><br>
                 <div class="bg-gray-200 rounded-full dark:bg-gray-700" style="width: 85%">
@@ -57,19 +58,19 @@
                 <div class="rounded-full" style="width: 60%">
                     <div class="bg-red-400 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">ORACLE 60%</div>
                 </div><br>
-                <div class=" rounded-full " style="width: 60%">
+                <div class="rounded-full" style="width: 60%">
                     <div class="bg-red-300 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">SQL SERVEUR 60%</div>
                 </div><br>
-                <div class=" rounded-full " style="width: 50%">
+                <div class="rounded-full" style="width: 50%">
                     <div class="bg-blue-500 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">PHP 50%</div>
                 </div><br>
-                <div class=" rounded-full " style="width: 80%">
+                <div class="rounded-full" style="width: 80%">
                     <div class="bg-green-400 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">MONGODB 80%</div>
                 </div><br>
-                <div class=" rounded-full" style="width: 85%">
+                <div class="rounded-full" style="width: 85%">
                     <div class="bg-orange-500 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">FIREBASE 80%</div>
                 </div><br>
-                <div class="rounded-full " style="width: 60%">
+                <div class="rounded-full" style="width: 60%">
                     <div class="bg-gray-600 text-base h-5 text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%">WINDEV 60%</div>
                 </div><br>
             </div>
@@ -78,22 +79,22 @@
             <div class="competences2">
                 <h1>Motivations</h1>
             </div>
-            <div class="section1 flex gap-6 items-center justify-center ">
-            <div class="w-96 h-40 ">
-            <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#E5E7EB] dark:border-[#E5E7EB] dark:hover:bg-[#E5E7EB]">
-            <p class="font-normal text-center text-[#111827] dark:text-[#111827]">“La persévérance est la clé de la réussite.”</p>
-             </a>
-            </div>
-            <div  class="w-96 h-40">
-                <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#E5E7EB] dark:border-[#E5E7EB] dark:hover:bg-[#E5E7EB]">
-                <p class="font-normal text-center text-[#111827] dark:text-[#111827]">“N'abandonne jamais. Chaque jour est une nouvelle opportunité.”</p>
-                 </a>
+            <div class="section1 flex gap-6 items-center justify-center">
+                <div class="w-96 h-40">
+                    <a href="#" class="block bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#E5E7EB] dark:border-[#E5E7EB] dark:hover:bg-[#E5E7EB]">
+                        <p class="font-normal text-center text-[#111827] dark:text-[#111827]">“La persévérance est la clé de la réussite.”</p>
+                    </a>
                 </div>
-                <div  class="w-96 h-40">
+                <div class="w-96 h-40">
                     <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#E5E7EB] dark:border-[#E5E7EB] dark:hover:bg-[#E5E7EB]">
-                    <p class="font-normal text-center text-[#111827] dark:text-[#111827]">“Le travail acharné surmonte le talent si le talent ne travaille pas dur.”</p>
-                     </a>
-                    </div>
+                        <p class="font-normal text-center text-[#111827] dark:text-[#111827]">“N'abandonne jamais. Chaque jour est une nouvelle opportunité.”</p>
+                    </a>
+                </div>
+                <div class="w-96 h-40">
+                    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#E5E7EB] dark:border-[#E5E7EB] dark:hover:bg-[#E5E7EB]">
+                        <p class="font-normal text-center text-[#111827] dark:text-[#111827]">“Le travail acharné surmonte le talent si le talent ne travaille pas dur.”</p>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -101,35 +102,26 @@
         <div class="contact">
             <h1>Contactez-moi</h1>
         </div>
-        <div>
-<form class="max-w-sm mx-auto pb-20">
-<div class="mb-5">
-<label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-<input type="text" id="name" class="shadow-sm bg-[#E5E7EB] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#E5E7EB] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#E5E7EB] dark:focus:border-[#E5E7EB] dark:shadow-sm-light" placeholder="Nom:" required />
-</div>
-<div class="mb-5">
-<label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-<input type="email" id="email" class="shadow-sm bg-[#E5E7EB] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#E5E7EB] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#E5E7EB] dark:focus:border-[#E5E7EB] dark:shadow-sm-light" placeholder="Email:" required />
-</div>
-<div class="mb-5">
-<label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-<input type="text" id="name" class="shadow-sm bg-[#E5E7EB] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#E5E7EB] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#E5E7EB] dark:focus:border-[#E5E7EB] dark:shadow-sm-light" placeholder="Message:" required />
-</div>
-<div class="flex items-start mb-5">
-<div class="flex items-center h-5">
-  <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-</div>
-<label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
-</div>
-<button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
-</form>
-    </div>       
+        <form class="max-w-sm mx-auto pb-20 pt-20">
+            <div class="mb-5">
+                <input type="text" id="name" class="input-field" placeholder="Nom:" required />
+            </div>
+            <div class="mb-5">
+                <input type="email" id="email" class="input-field" placeholder="Email:" required />
+            </div>
+            <div class="mb-5">
+                <input type="text" id="message" class="input-field" placeholder="Message:" required />
+            </div>
+            <div class="flex items-start mb-5">
+                <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">terms and conditions</a></label>
+            </div>
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+        </form>
     </section>
     <footer class="footer">
         <p>© 2024 Omar Sagna. Tous droits réservés.</p>
     </footer>
-
-
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>

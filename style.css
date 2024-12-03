@@ -1,64 +1,136 @@
-html {
-    scroll-behavior: smooth;
-  }
+/* style.css */
 
-.navbar{
+/* Style général du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+/* Formulaire responsive - pour écrans de 600px ou moins */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Footer */
+.footer {
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer responsive - pour écrans de 600px ou moins */
+@media screen and (max-width: 600px) {
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Styles pour le menu burger et la barre de navigation */
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 60px;
     background-color: white;
 }
 
-.navbar h1{
+.navbar h1 {
     font-size: 25px;
     font-weight: 800;
 }
 
-.menu a{
-    justify-content: space-between;
+.menu a {
     color: black;
     padding: 10px;
+    text-decoration: none;
 }
 
-.banner{
-    background-image: url(image.jpg);
+/* Style du menu burger */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsivité pour les petits écrans (mobile) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .banner {
+        padding-top: 100px; /* Réduit le padding supérieur pour les petits écrans */
+    }
+}
+
+/* Bannière */
+.banner {
+    background-image: url('image.jpg');
     text-align: center;
     padding-top: 200px;
     height: 500px;
     color: white;
 }
 
-.banner h1{
+.banner h1 {
     font-size: 60px;
     font-weight: 800;
 }
 
-.banner p{
+.banner p {
     font-size: 25px;
 }
 
-.competences h1{
+/* Section des compétences */
+.competences h1 {
     font-size: 25px;
     text-align: center;
     font-weight: 800;
 }
 
-.projet h1 {
-    font-size: 25px;
-    text-align: center;
-    font-weight: 800;
+.competences1 h1 {
     padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
 }
 
-.contact h1 {
+.competences2 h1 {
     font-size: 25px;
     text-align: center;
     font-weight: 800;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
-.parag{
+/* Section à propos de moi */
+.parag {
     text-align: center;
     margin: 50px;
     padding: 25px;
@@ -67,42 +139,85 @@ html {
     background-color: rgb(159, 159, 228);
 }
 
-.progress{
+/* Section de progression des compétences */
+.progress {
     background-color: #f3f0f0fb;
     margin: 50px;
     padding: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding-left: 150px;
-    padding-right: 150px;
 }
 
-.competences1 h1{
-    padding-bottom: 30px;
-    font-size: 40px;
+.rounded-full {
+    margin: 5px 0;
+}
+
+/* Section des motivations */
+.motivation .section1 {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.motivation .w-96 {
+    width: 300px;
+    height: 150px;
+}
+
+/* Style pour les citations de motivation */
+.motivation .w-96 a {
+    display: block;
+    max-width: 100%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-weight: 800;
-
+    color: #111827;
 }
 
-.competences2 h1{
+.motivation .w-96 a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Section de contact */
+.form {
+    padding-bottom: 50px;
+}
+
+.contact h1 {
     font-size: 25px;
     text-align: center;
     font-weight: 800;
     padding-bottom: 15px;
+    padding-top: 100px;
 
 }
 
-.form{
-    padding-bottom: 50px;
+/* Menu déroulant (responsivité pour mobile) */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
 }
 
-.footer{
+/* Footer */
+.footer {
     background-color: gray;
     font-size: 20px;
     text-align: center;
     color: white;
     height: 100px;
     padding-top: 25px;
-
 }
